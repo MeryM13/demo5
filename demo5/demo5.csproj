@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B55D04C-3D50-4424-ABF6-2C1C31BF6C7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>demo5</RootNamespace>
+    <AssemblyName>demo5</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASSES\Client.cs" />
+    <Compile Include="CLASSES\ClientService.cs" />
+    <Compile Include="CLASSES\Service.cs" />
+    <Compile Include="FORMS\AddUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\AddUpdateForm.Designer.cs">
+      <DependentUpon>AddUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ClientService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FORMS\ClientService.Designer.cs">
+      <DependentUpon>ClientService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\ClientServicesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\ClientServicesForm.Designer.cs">
+      <DependentUpon>ClientServicesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORMS\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UTILS\ConnectionString.cs" />
+    <Compile Include="UTILS\DataWork.cs" />
+    <EmbeddedResource Include="FORMS\AddUpdateForm.resx">
+      <DependentUpon>AddUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ClientService.resx">
+      <DependentUpon>ClientService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\ClientServicesForm.resx">
+      <DependentUpon>ClientServicesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORMS\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IMAGES\Клиенты\1.jpg" />
+    <Content Include="IMAGES\Клиенты\10.jpg" />
+    <Content Include="IMAGES\Клиенты\11.jpg" />
+    <Content Include="IMAGES\Клиенты\12.jpg" />
+    <Content Include="IMAGES\Клиенты\13.jpg" />
+    <Content Include="IMAGES\Клиенты\14.jpg" />
+    <Content Include="IMAGES\Клиенты\15.jpg" />
+    <Content Include="IMAGES\Клиенты\16.jpg" />
+    <Content Include="IMAGES\Клиенты\17.jpg" />
+    <Content Include="IMAGES\Клиенты\18.jpg" />
+    <Content Include="IMAGES\Клиенты\19.jpg" />
+    <Content Include="IMAGES\Клиенты\2.jpg" />
+    <Content Include="IMAGES\Клиенты\20.jpg" />
+    <Content Include="IMAGES\Клиенты\21.jpg" />
+    <Content Include="IMAGES\Клиенты\22.jpg" />
+    <Content Include="IMAGES\Клиенты\23.jpg" />
+    <Content Include="IMAGES\Клиенты\24.jpg" />
+    <Content Include="IMAGES\Клиенты\25.jpg" />
+    <Content Include="IMAGES\Клиенты\26.jpg" />
+    <Content Include="IMAGES\Клиенты\27.jpg" />
+    <Content Include="IMAGES\Клиенты\28.jpg" />
+    <Content Include="IMAGES\Клиенты\29.jpg" />
+    <Content Include="IMAGES\Клиенты\3.jpg" />
+    <Content Include="IMAGES\Клиенты\30.jpg" />
+    <Content Include="IMAGES\Клиенты\31.jpg" />
+    <Content Include="IMAGES\Клиенты\32.jpg" />
+    <Content Include="IMAGES\Клиенты\33.jpg" />
+    <Content Include="IMAGES\Клиенты\34.jpg" />
+    <Content Include="IMAGES\Клиенты\35.jpg" />
+    <Content Include="IMAGES\Клиенты\36.jpg" />
+    <Content Include="IMAGES\Клиенты\37.jpg" />
+    <Content Include="IMAGES\Клиенты\38.jpg" />
+    <Content Include="IMAGES\Клиенты\39.jpg" />
+    <Content Include="IMAGES\Клиенты\4.jpg" />
+    <Content Include="IMAGES\Клиенты\40.jpg" />
+    <Content Include="IMAGES\Клиенты\41.jpg" />
+    <Content Include="IMAGES\Клиенты\42.jpg" />
+    <Content Include="IMAGES\Клиенты\43.jpg" />
+    <Content Include="IMAGES\Клиенты\44.jpg" />
+    <Content Include="IMAGES\Клиенты\47.jpg" />
+    <Content Include="IMAGES\Клиенты\48.jpg" />
+    <Content Include="IMAGES\Клиенты\5.jpg" />
+    <Content Include="IMAGES\Клиенты\6.jpg" />
+    <Content Include="IMAGES\Клиенты\7.jpg" />
+    <Content Include="IMAGES\Клиенты\8.jpg" />
+    <Content Include="IMAGES\Клиенты\9.jpg" />
+    <Content Include="IMAGES\Клиенты\m1.jpg" />
+    <Content Include="IMAGES\Клиенты\m10.jpg" />
+    <Content Include="IMAGES\Клиенты\m11.jpg" />
+    <Content Include="IMAGES\Клиенты\m12.jpg" />
+    <Content Include="IMAGES\Клиенты\m13.jpg" />
+    <Content Include="IMAGES\Клиенты\m14.jpg" />
+    <Content Include="IMAGES\Клиенты\m15.jpg" />
+    <Content Include="IMAGES\Клиенты\m16.jpg" />
+    <Content Include="IMAGES\Клиенты\m17.jpg" />
+    <Content Include="IMAGES\Клиенты\m18.jpg" />
+    <Content Include="IMAGES\Клиенты\m19.jpg" />
+    <Content Include="IMAGES\Клиенты\m2.jpg" />
+    <Content Include="IMAGES\Клиенты\m20.jpg" />
+    <Content Include="IMAGES\Клиенты\m21.jpg" />
+    <Content Include="IMAGES\Клиенты\m22.jpg" />
+    <Content Include="IMAGES\Клиенты\m23.jpg" />
+    <Content Include="IMAGES\Клиенты\m24.jpg" />
+    <Content Include="IMAGES\Клиенты\m25.jpg" />
+    <Content Include="IMAGES\Клиенты\m26.jpg" />
+    <Content Include="IMAGES\Клиенты\m27.jpg" />
+    <Content Include="IMAGES\Клиенты\m28.jpg" />
+    <Content Include="IMAGES\Клиенты\m29.jpg" />
+    <Content Include="IMAGES\Клиенты\m3.jpg" />
+    <Content Include="IMAGES\Клиенты\m30.jpg" />
+    <Content Include="IMAGES\Клиенты\m31.jpg" />
+    <Content Include="IMAGES\Клиенты\m32.jpg" />
+    <Content Include="IMAGES\Клиенты\m33.jpg" />
+    <Content Include="IMAGES\Клиенты\m34.jpg" />
+    <Content Include="IMAGES\Клиенты\m35.jpg" />
+    <Content Include="IMAGES\Клиенты\m36.jpg" />
+    <Content Include="IMAGES\Клиенты\m37.jpg" />
+    <Content Include="IMAGES\Клиенты\m38.jpg" />
+    <Content Include="IMAGES\Клиенты\m39.jpg" />
+    <Content Include="IMAGES\Клиенты\m4.jpg" />
+    <Content Include="IMAGES\Клиенты\m40.jpg" />
+    <Content Include="IMAGES\Клиенты\m41.jpg" />
+    <Content Include="IMAGES\Клиенты\m42.jpg" />
+    <Content Include="IMAGES\Клиенты\m43.jpg" />
+    <Content Include="IMAGES\Клиенты\m44.jpg" />
+    <Content Include="IMAGES\Клиенты\m45.jpg" />
+    <Content Include="IMAGES\Клиенты\m46.jpg" />
+    <Content Include="IMAGES\Клиенты\m47.jpg" />
+    <Content Include="IMAGES\Клиенты\m48.jpg" />
+    <Content Include="IMAGES\Клиенты\m49.jpg" />
+    <Content Include="IMAGES\Клиенты\m5.jpg" />
+    <Content Include="IMAGES\Клиенты\m50.jpg" />
+    <Content Include="IMAGES\Клиенты\m6.jpg" />
+    <Content Include="IMAGES\Клиенты\m7.jpg" />
+    <Content Include="IMAGES\Клиенты\m8.jpg" />
+    <Content Include="IMAGES\Клиенты\m9.jpg" />
+    <Content Include="IMAGES\Клиенты\m96.jpg" />
+    <Content Include="IMAGES\Клиенты\m97.jpg" />
+    <Content Include="IMAGES\Клиенты\m98.jpg" />
+    <Content Include="IMAGES\Клиенты\m99.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
